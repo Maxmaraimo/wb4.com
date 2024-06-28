@@ -59,6 +59,8 @@
 - models.ManyToManyField - a field used to specify a many-to-many relationship
 - models.OneToOneField  - a field used to specify a one-to-one relationship
 
+##python3 manage.py runserver 192.168.20.117:8000
+
 #### Create superuser
     > python manage.py createsuperuser
 
