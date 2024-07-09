@@ -1,0 +1,58 @@
+{% block style %}
+<style>
+    nav {
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0 10px 10px 0;
+    }
+    nav a {
+        font-size: x-large;
+        padding: 15px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 0 10px 10px 0;
+    }
+
+    
+    
+    #wishlist {
+        position: fixed;
+        z-index: 999;
+        right: 5px;
+        bottom: 5px;
+        padding: 5px;
+        font-size: 2em;
+        text-decoration: none;
+        border-radius: 50px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #333;
+    }
+</style>
+{% endblock %}
+
+<nav>
+    <a href="{% url 'home_page' %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Home">
+        🏠
+    </a>
+    <a href="{% url 'books_view' %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Books">
+        📖
+    </a>
+    <a href="{% url 'add_book' %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Add a book">
+        ➕
+    </a>
+    <a href="{% url 'profile' %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Profile">
+        🤵🏻
+    </a>
+    <a href="{% url 'logout' %}" data-bs-toggle="tooltip" data-bs-placement="top" title="Logout">
+        &rightarrow;
+    </a>
+</nav>

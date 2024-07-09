@@ -13,8 +13,8 @@
     transition: 0.2s ease-out;
 }
 body {
-    background-color: #eee;
-    color: #111;
+    background-color: #000000;
+    color: #ffffff;
 }
 h1, h2 {
     font-family: 'Fino', serif;
